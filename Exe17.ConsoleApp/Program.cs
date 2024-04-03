@@ -5,27 +5,49 @@
         //Faça um algoritmo que leia os valores A, B, C e
         //imprima na tela se a soma de A + B é menor que C.
 
+        //Escreva um algoritmo que leia três valores inteiros
+        //e diferentes e mostre-os em ordem decrescente.
         static void Main(string[] args)
         {
-            Console.Clear();
-            decimal a, b, c;
+            int a, b, c;
 
-            Console.WriteLine("Digite o valor de A: ");
-            a = Convert.ToDecimal(Console.ReadLine());
+            Console.WriteLine("Digite três valores inteiros e diferentes: ");
+            a = Convert.ToInt32(Console.ReadLine());
+            b = Convert.ToInt32(Console.ReadLine());
+            c = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Digite o valor de B: ");
-            b = Convert.ToDecimal(Console.ReadLine());
-
-            Console.WriteLine("Digite o valor de C: ");
-            c = Convert.ToDecimal(Console.ReadLine());
-
-            if (a + b < c)
+            if (a > b && a > c)
             {
-                Console.WriteLine("A soma de A e B é menor que C.");
+                if (b > c)
+                {
+                    Console.WriteLine(a + ", " + b + ", " + c);
+                }
+                else
+                {
+                    Console.WriteLine(a + ", " + c + ", " + b);
+                }
+            }
+            else if (b > a && b > c)
+            {
+                if (a > c)
+                {
+                    Console.WriteLine(b + ", " + a + ", " + c);
+                }
+                else
+                {
+                    Console.WriteLine(b + ", " + c + ", " + a);
+                }
             }
             else
             {
-                Console.WriteLine("A soma de A e B não é menor que C.");
+                if (a > b)
+                {
+                    Console.WriteLine(c + ", " + a + ", " + b);
+                }
+                else
+                {
+                    Console.WriteLine(c + ", " + b + ", " + a);
+                }
             }
 
             Console.ReadLine();
