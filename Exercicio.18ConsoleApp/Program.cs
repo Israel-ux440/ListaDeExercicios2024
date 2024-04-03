@@ -1,4 +1,4 @@
-﻿namespace Exercicio19.ConsoleApp
+﻿namespace Exercicio._18ConsoleApp
 {
     internal class Program
     {
@@ -49,4 +49,5 @@
 
             Console.ReadLine();
         }
+    }
 }
