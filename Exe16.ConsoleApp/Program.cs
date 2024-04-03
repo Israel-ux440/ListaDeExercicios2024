@@ -1,4 +1,4 @@
-﻿namespace Exercicio15.ConsoleApp
+﻿namespace Exe16.ConsoleApp
 {
     internal class Program
     {
@@ -8,6 +8,7 @@
             decimal impostos = 0.8m;
 
             decimal salarioAtual, salarioComAumento, salarioFinal;
+
             Console.Write("Digite o seu salário atual: ");
             salarioAtual = Convert.ToDecimal(Console.ReadLine());
 
